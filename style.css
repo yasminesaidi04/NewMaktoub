@@ -1,0 +1,210 @@
+/* GLOBAL STYLES */
+body {
+    background-color: #c6b9c2;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3e214d;
+}
+
+/* HEADER & NAV */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #3e214d;
+}
+
+nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #3e214d;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.shop-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: #3e214d;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.shop-btn:hover {
+    opacity: 0.8;
+}
+
+/* PRODUCT SECTION */
+.products {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: #3e214d;
+}
+ /* ABOUT PAGE */
+.about-page {
+    padding: 4rem 2rem;
+}
+
+.about-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.about-content {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.about-content article {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-content h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.about-content p,
+.about-content li {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #3e214d;
+}
+
+.about-content ul {
+    padding-left: 1.5rem;
+}
+.about-content li {
+    margin-bottom: 0.5rem;
+}
+/* SEASONAL DROPS PAGE */
+.seasonal-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.seasonal-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.seasonal-hero p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.season-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+.drop-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.drop-card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.drop-card h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.release-date {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: #3e214d;
+}
+.product-image {
+  width: 100%;
+  height: 25rem;   /* adjust this value to make them taller/shorter */
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
