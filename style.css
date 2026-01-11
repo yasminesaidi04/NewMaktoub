@@ -208,34 +208,48 @@ nav a:hover {
   object-fit: cover;
   border-radius: 0.5rem;
 }
-   /* =========================
-   RESPONSIVE – MOBILE
+/* =========================
+   IMAGE ANIMATIONS
    ========================= */
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: center;
-  }
-
+/* Image fade-up on load */
+.product-image,
+.drop-card img {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
 }
-@media (max-width: 600px) {
 
-  .hero h2 {
-    font-size: 2.2rem;
+/* Keyframes MUST be outside everything */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   HOVER INTERACTIONS (DESKTOP)
+   ========================= */
+
+.drop-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drop-card img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Apply hover only on devices that support it */
+@media (hover: hover) {
+
+  .drop-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
   }
 
-  .product-grid,
-  .season-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
+  .drop-card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   }
 
 }
