@@ -248,6 +248,11 @@ nav{
     padding: 2rem 1.5rem;
   }
 
+  /* Stack seasonal grid */
+  .product-grid {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
 }
 @keyframes fadeUpMobile {
   to {
