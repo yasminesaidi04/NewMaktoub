@@ -219,6 +219,15 @@ nav{
     animation: fadeUpMobile 0.6s ease forwards;
     animation-delay: 0.8s;
   } 
+  .drop-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drop-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
 /* =========================
    MOBILE ONLY (DO NOT AFFECT DESKTOP)
    ========================= */
@@ -255,6 +264,77 @@ nav{
   }
 }
 @keyframes fadeUpMobile {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* =========================
+   CONTACT PAGE STYLES
+   ========================= */
+
+.contact-section {
+  background-color: #c6b9c2;
+  color: #3e214d;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contact-section h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-intro {
+  max-width: 500px;
+  margin: 0 auto 3rem;
+  font-size: 0.95rem;
+}
+
+/* Contact cards layout */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.contact-card {
+  background-color: white;
+  color: #3e214d;
+  width: 220px;
+  padding: 2rem;
+  border-radius: 16px;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUpContact 0.8s ease forwards;
+}
+
+/* Icon style */
+.contact-icon {
+  font-size: 2rem;
+}
+
+/* Hover interaction (desktop only) */
+@media (hover: hover) {
+  .contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Animation keyframes */
+@keyframes fadeUpContact {
   to {
     opacity: 1;
     transform: translateY(0);
